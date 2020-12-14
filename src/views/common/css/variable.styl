@@ -1,0 +1,49 @@
+$color-theme = #fe5344
+
+
+//文字居中
+text-center(h)
+  height: h
+  line-height: h
+  text-align center
+
+//背景平铺
+bg-cover(urls,w,h)
+  display inline-block
+  width w
+  height h
+  background urls no-repeat center
+  background-size 100% 100%
+
+//定位拉伸全屏
+fullScreen(t,r,b,l)
+  position: absolute
+  top: t || 0
+  left: l || 0
+  right: r || 0
+  bottom: b || 0
+
+
+//点击区域扩展
+extend-click()
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: -10px
+    left: -10px
+    right: -10px
+    bottom: -10px
+
+//触摸区域透明
+extend-hover()
+  position: relative
+  &:before
+    content: ''
+    display:none;
+    position: absolute
+    top: 0px
+    left: 0px
+    right: 0px
+    bottom: 0px
+    background rgba(255,131,131,.3)

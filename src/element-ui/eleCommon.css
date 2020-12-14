@@ -1,0 +1,11 @@
+.el-cascader-menu {
+    overflow-x: hidden !important;
+}
+.el-cascader-menu__wrap{
+    overflow: auto !important;
+    overflow-y: scroll !important; 
+}
+.el-menu-item:focus{
+    background-color: #17B3A3 !important;
+    color:#ffffff !important;
+}
